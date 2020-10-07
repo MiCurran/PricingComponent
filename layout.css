@@ -103,6 +103,8 @@ body {
 
   button {
       height: 50px !important;
+      border-radius: .5em !important;
+      ;
   }
 
   .btn-block {
@@ -142,6 +144,10 @@ hr {
   }
   .price {
       font-size: 4.5em;
+  }
+
+  .price-yearly {
+    visibility: hidden;
   }
 
   /*toggle switch start*/
@@ -215,3 +221,49 @@ hr {
     border-radius: 50%;
   }
   /* Toggle Switch End */
+  /*On Hover*/
+  .btn-block:hover {
+    background-image: none !important;
+    background-color: #ffffff !important;
+    border-color: hsl(237, 63%, 64%) !important;}
+  
+    .middle-card button:hover {
+      color: #ffffff;
+      background-color: none;
+  }
+  #middle-btn:hover {
+    background-image: linear-gradient(to right, hsl(236, 72%, 79%), hsl(237, 63%, 64%)) !important;
+        background-color: none !important;
+    border-color: #ffffff !important;
+}
+
+  @media only screen and (max-width: 1400px) {
+    
+  .card-row {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      margin: 5% 2.5%;
+  }
+
+  .nav {
+    margin-top: 15%;
+  }
+  .card {
+    margin: 2.5% 2.5%;
+    width: 90%;
+    border-radius: 2.5% !important;
+  }
+
+  .bottom {
+    visibility: hidden;
+  }
+
+  .top {
+    position: absolute;
+    right: -43%;
+    top: -5%;
+  }
+
+  }
